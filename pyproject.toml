@@ -1,0 +1,19 @@
+[project]
+name = "autonomous-enterprise-manager"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2.0",
+    "pydantic>=2.5.3",
+    "pydantic-settings>=2.1.0",
+    "requests>=2.31.0",
+    "flask>=3.0.0",
+]
+
+[tool.uv.workspace]
+members = ["apps/backend"]
+
+[tool.ruff.lint]
+ignore = ["E402", "E701", "E702", "F401", "F821", "F841"]
